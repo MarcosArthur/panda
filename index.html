@@ -12,6 +12,16 @@
    
   </head>
   <body>
+
+    <div class="login">
+      <h1 class="title">Ops.. Digite o super codigo secreto</h1>
+      <form>
+        <input type="text" placeholder="Codigo" class="input" id="senha">
+        <button class="btn">Entrar</button>
+      </form>
+    </div>
+
+
     <header class="cabecalho" id="inicio">
       <img src="img/panda.png" class="panda" />
       <p class="text">
@@ -89,6 +99,20 @@
     </section>
 
 
+    <script>
+     
+      document.querySelector('form').addEventListener('submit', e => {
+        e.preventDefault();
+        var senha = document.getElementById('senha').value;
 
+        if (senha.toUpperCase() == "PANDINHA") {
+          document.querySelector('.login').remove();
+        } else {
+          alert("Senha errada viu !")
+        }
+      })
+    </script>
+
+    
   </body>
 </html>
