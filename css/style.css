@@ -48,7 +48,7 @@ img {
     margin-top: 5px;
     padding: 5px 10px;
     border-radius: 6px;
-    
+
 }
 
 .button {
@@ -58,7 +58,7 @@ img {
     margin-top: 5px;
     padding: 5px 10px;
     border-radius: 6px;
-    
+
 }
 
 .button-red {
@@ -70,9 +70,13 @@ img {
 }
 
 .madeira {
-    width: 30%;
+    width: 10%;
     position: absolute;
     animation: mama .6s alternate infinite;
+}
+
+@media all and (max-width: 720px) {
+  .madeira {width: 30%}
 }
 
 @keyframes mama {
@@ -110,9 +114,15 @@ img {
 }
 
 .nos {
-    width: 50%;
+    width: 20%;
     border: solid 4px #f1c40f;
     box-shadow: 0px 0px 2px 1px white;
+}
+
+@media all and (max-width: 720px) {
+  .nos {
+    width: 50%;
+  }
 }
 
 .text.black {
@@ -130,7 +140,7 @@ img {
 }
 
 @media all and (max-width: 720px) {
-   
+
 .panda {
     width: 40%;
 }
